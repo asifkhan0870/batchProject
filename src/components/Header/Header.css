@@ -1,0 +1,111 @@
+/* Reset some default styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox container */
+.h-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Adjust padding as needed */
+  background-color: white; /* Example background color */
+  margin-top: 20px;
+}
+
+.h-img {
+  color: red;
+}
+
+.h-text {
+  font-size: 2rem;
+}
+
+.h-navigation {
+  margin-left: 80px;
+}
+
+.h-navigation .menu-icon {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+.h-left {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.h-logo {
+  display: flex;
+  align-items: center;
+}
+
+.h-navigation ul {
+  display: flex;
+  gap: 3rem; /* Space between navigation items */
+}
+
+.h-navigation li {
+  display: inline;
+}
+
+/* Ensure the button in h-right is styled appropriately */
+.h-navigation .btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: black; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-right: 100px; */
+  margin-left: 150px;
+}
+
+.h-right .btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (min-width: 752px) and (max-width: 842px) {
+  .h-navigation > ul {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 751px) {
+  .h-navigation .menu-icon {
+    display: block;
+    /* background-color: red; */
+    right: 12px;
+    left: 12px;
+  }
+
+  .h-navigation > ul {
+    /* display: block; */
+    color: black;
+    position: absolute;
+    top: 4rem;
+    right: 2px;
+    background: white;
+    flex-direction: column;
+    font-weight: 500;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 12px;
+    border: 2px solid white;
+    align-items: flex-start;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    transition: all 200ms ease-in;
+    z-index: 2;
+  }
+
+  .h-navigation .btn {
+    margin-left: 5px;
+  }
+}

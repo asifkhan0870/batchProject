@@ -1,0 +1,118 @@
+.c-wrapper {
+  display: flex;
+  margin-top: 100px;
+  width: 65%;
+}
+
+.c-text-primary > h1 {
+  font-size: 3rem;
+  margin-left: 64px;
+  font-weight: bold;
+}
+
+.c-text-secondary {
+  margin-left: 64px;
+}
+
+.c-navigation {
+  display: flex;
+  margin-top: 32px;
+  margin-left: 65px;
+  gap: 4rem;
+}
+
+.c-navigation-left .c-btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: black; /* Example button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-right: 100px; */
+  margin-left: 150px;
+}
+
+.c-navigation-right {
+  gap: 2rem;
+  display: flex;
+}
+
+.c-navigation-right > span {
+  margin-left: -22px;
+  margin-top: 5px;
+}
+
+.c-last-img > img {
+  margin-top: 22px;
+}
+
+.orange-circle {
+  height: 14rem;
+  width: 14rem;
+  background: linear-gradient(200deg, yellow 0%, red 70%);
+  border-radius: 709px;
+  position: absolute;
+  right: 65%;
+  top: 15%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+/* Flexbox container */
+.c-right {
+  position: relative; /* Relative positioning for containing absolutely positioned children */
+  transform: rotate(0deg); /* Tilt the whole container to the left */
+  transform-origin: center center; /* Set the pivot point for the rotation */
+  width: 300px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  margin: -65px auto; /* Center the container horizontally */
+}
+
+/* Ensure images are responsive and aligned properly */
+.c-image {
+  position: absolute; /* Position each image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.c-first {
+  z-index: 4; /* Highest layer */
+  transform: translate(0, 0); /* No offset for the first image */
+}
+
+.c-second {
+  z-index: 3;
+  transform: translate(100px, 80px); /* Slight offset for the second image */
+}
+
+.c-third {
+  z-index: 2;
+  transform: translate(200px, 110px); /* Slight offset for the third image */
+}
+
+.c-fourth {
+  z-index: 1; /* Lowest layer */
+  transform: translate(30px, 60px); /* Slight offset for the fourth image */
+}
+
+.right-orange-circle {
+  height: 30rem;
+  width: 30rem;
+  background: linear-gradient(400deg, red 40%, yellow 40%);
+  border-radius: 709px;
+  position: absolute;
+  right: -250%;
+  top: 85%;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Background color for better visibility */
